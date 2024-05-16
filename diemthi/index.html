@@ -4,34 +4,44 @@
     <title>Điểm thi</title>
   </head>
   <body>
-    <table border="1" width="100%">
+    <table border="1" width="100%" id="trollTable" cellpadding="15">
+      <thead>
+        <tr>
+          <th colspan="2"><h1>Bảng điểm cuối kì 2</h1></th>
+        </tr>
+      </thead>
       <tr>
-        <th><h1>Môn học</h1></th>
-        <th><h1>Điểm cuối kì 2</h1></th>
+        <th><h2>Môn học</h2></th>
+        <th><h2>Điểm cuối kì 2</h2></th>
       </tr>
       <tr>
-        <td><h1>Toán</h1></td>
-        <td><h1>10</h1></td>
+        <td><h2>Toán</h2></td>
+        <td><h2 class="diem">10</h2></td>
       </tr>
       <tr>
-        <td><h1>Ngữ văn</h1></td>
-        <td><h1>8.25</h1></td>
+        <td><h2>Ngữ văn</h2></td>
+        <td><h2 class="diem">8.25</h2></td>
       </tr>
       <tr>
-        <td><h1>Tiếng Anh</h1></td>
-        <td><h1>8.6</h1></td>
+        <td><h2>Tiếng Anh</h2></td>
+        <td><h2 class="diem">8.6</h2></td>
       </tr>
       <tr>
-        <td><h1>Lịch sử và địa lí</h1></td>
-        <td><h1>10</h1></td>
+        <td><h2>Lịch sử và địa lí</h2></td>
+        <td><h2 class="diem">10</h2></td>
       </tr>
       <tr>
-        <td><h1>Khoa học tự nhiên</h1></td>
-        <td><h1>9.25</h1></td>
+        <td><h2>Khoa học tự nhiên</h2></td>
+        <td><h2 class="diem">9.25</h2></td>
       </tr>
     </table>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-      ><h1>Ấn vào....</h1></a
-    >
+    <a href="#" onclick="trollVietNam()"><h1>Ấn vào để biết sự thật</h1></a>
+    <script>
+      function trollVietNam() {
+        for (el of document.getElementsByClassName("diem")) {
+          el.innerText = "0";
+        }
+      }
+    </script>
   </body>
 </html>
